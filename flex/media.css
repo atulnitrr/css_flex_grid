@@ -1,0 +1,25 @@
+/*
+-variable image size
+-image left and right 
+-image verticle align
+-nesting 
+-responsiveness
+*/
+
+.media {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.figure {
+  flex: 1 1 30%;
+  align-self: flex-start;
+}
+
+.media-body {
+  flex: 1 1 60%;
+}
+
+p {
+  margin: 0 10px 20px 10px;
+}
