@@ -3,13 +3,99 @@
 flex-direection : row, row-reverse, column, column-rverse
 justify-content : flext-start, flext-end, center, space-around, space-between 
 align-items: flex-start, flex-end, stretch, center, baseline
+flex-wrap: wrap, no-wrap
+align-content: flex-start, flex-end, center
+
+// flex item property 
+alighn-self : 
+flex-grow: 
+flex-shrink:
+flex-shrink: 1;  --default value 
+flex-basis : 100ppx
+
+
 */
 
 .container {
+  display: flex;
+  border: 1px solid #fff;
+  width: 800px;
+}
+
+.container div {
+  /* flex-basis: 100px;
+  flex-grow: 1; */
+
+  flex: 1 1 10%;
+  margin: 0;
+}
+
+.container div:nth-child(1) {
+  flex-grow: 2;
+}
+/* .container {
+  display: flex;
+  width: 400px;
+  border: 2px solid green;
+}
+
+.container div {
+  width: 200px;
+  margin: 0;
+}
+
+.container div:nth-child(2) {
+  flex-shrink: 2;
+} */
+
+/* .container {
+  display: flex;
+  border: 1px solid #fff;
+  width: 800px;
+}
+
+.container div {
+  width: 100px;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.container div:nth-child(1) {
+  flex-grow: 3;
+}
+
+.container div:nth-child(2) {
+  flex-grow: 3;
+} */
+/* .container {
   display: flex;
   justify-content: space-between;
   border: 1px solid #fff;
   height: 200px;
   align-items: center;
-  /* flex-direction: column-reverse; */
+  width: 500px;
+} */
+
+/* .container {
+  display: flex;
+
+  border: 1px solid #fff;
+  height: 400px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: space-between;
+  width: 500px;
+   flex-direction: row;
+  flex-wrap: wrap; 
+
+  flex-flow: row wrap;
+  margin-top: 16px;
+} */
+
+.container div:nth-child(3) {
+  /* order: -1; */
+  /* order: 2; */
 }
+/* .container div:nth-child(2) {
+  font-size: 40px;
+} */
