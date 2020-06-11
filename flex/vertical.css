@@ -1,0 +1,25 @@
+.vcenter {
+  display: flex;
+  border: 1px solid #ffff;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .vcenter * {
+  margin: auto;
+} */
+
+p {
+  margin: 0;
+  padding-left: 10px;
+}
+
+nav {
+  width: 400px;
+}
+
+li {
+  list-style: none;
+  flex-basis: 25%;
+}
