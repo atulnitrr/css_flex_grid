@@ -1,0 +1,15 @@
+/**
+
+flex-direection : row, row-reverse, column, column-rverse
+justify-content : flext-start, flext-end, center, space-around, space-between 
+align-items: flex-start, flex-end, stretch, center, baseline
+*/
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #fff;
+  height: 200px;
+  align-items: center;
+  /* flex-direction: column-reverse; */
+}
