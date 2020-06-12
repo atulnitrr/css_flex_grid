@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container-main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#main {
+  display: flex;
+  flex-grow: 1;
+}
+
+#content {
+  flex: 4 1 0%;
+}
+
+#secondery {
+  /* flex-basis: 200px; */
+  order: -1;
+  flex: 1 1 0%;
+}
+
+#terniary {
+  /* flex-basis: 150px; */
+  flex: 1 1 0%;
+}
+
+#header,
+#footer {
+  padding: 10px;
+  text-align: center;
+}
+
+#main * {
+  padding: 20px;
+}
