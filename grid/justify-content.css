@@ -1,0 +1,13 @@
+/**
+justify-content: center, start; --> this is about whole container not about items
+*/
+
+.grid {
+  display: grid;
+  grid-template:
+    repeat(3, 100px) /
+    200px auto;
+  grid-gap: 10px;
+  justify-content: space-between;
+  border: 1px solid #fff;
+}
