@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex1</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template: 50px 200px 100px / repeat(3, 1fr);
+        grid-gap: 10px 10px;
+        border: 1px solid gray;
+        text-align: center;
+      }
+
+      .container div:nth-child(1) {
+        grid-row: 1 / 2;
+        grid-column: auto / span 3;
+        background-color: black;
+      }
+
+      .container div:nth-child(2) {
+        grid-row: 2/3;
+        grid-column: auto / span 2;
+        background-color: #999;
+      }
+
+      .container div:nth-child(3) {
+        grid-row: 2/3;
+        grid-column: 3/4;
+        background-color: #666;
+      }
+      .container div:nth-child(4) {
+        grid-row: 3/4;
+        grid-column: 1/ -1;
+        background-color: #444;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>item 1</div>
+      <div>item 2</div>
+      <div>item 3</div>
+      <div>item 4</div>
+    </div>
+  </body>
+</html>
