@@ -1,5 +1,5 @@
 /**
-justify-content: center, start; --> this is about whole container not about items
+justify-content: center, start, stretch; --> this is about whole container not about items
 */
 
 .grid {
@@ -8,6 +8,8 @@ justify-content: center, start; --> this is about whole container not about item
     repeat(3, 100px) /
     200px auto;
   grid-gap: 10px;
-  justify-content: space-between;
+  justify-content: space-around;
+  height: 400px;
+  align-content: center;
   border: 1px solid #fff;
 }

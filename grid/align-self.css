@@ -1,0 +1,19 @@
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template:
+    150px 150px /
+    200px 200px 200px;
+
+  border: 1px solid #fff;
+  padding: 10px;
+
+  justify-content: center;
+  height: 400px;
+  align-content: center;
+}
+
+.grid div:nth-child(1) {
+  justify-self: center;
+  align-self: end;
+}
