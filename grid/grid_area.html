@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid area</title>
+    <link rel="stylesheet" href="base.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .container {
+        display: grid;
+        grid-template: 100px 100px 100px / 200px auto 150px;
+        grid-template-areas:
+          "E E A"
+          "B C A"
+          "B F D";
+
+        grid-gap: 10px;
+      }
+
+      .container > div {
+        background-color: #666;
+      }
+
+      .container div:nth-child(1) {
+        grid-area: A;
+      }
+      .container div:nth-child(2) {
+        grid-area: B;
+      }
+      .container div:nth-child(3) {
+        grid-area: C;
+      }
+      .container div:nth-child(4) {
+        grid-area: D;
+      }
+      .container div:nth-child(5) {
+        grid-area: E;
+      }
+      .container div:nth-child(6) {
+        grid-area: F;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>item 1</div>
+      <div>item 2</div>
+      <div>item 3</div>
+      <div>item 4</div>
+      <div>item 5</div>
+      <div>item 6</div>
+    </div>
+  </body>
+</html>

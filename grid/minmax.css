@@ -1,0 +1,8 @@
+.grid {
+  display: grid;
+  grid-template:
+    minmax(100px, 200px) 100px 100px
+    / repeat(6, minmax(100px, 1fr));
+
+  grid-gap: 10px;
+}
