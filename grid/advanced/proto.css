@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.grid {
+  display: grid;
+  grid:
+    100px auto 150px
+    / repeat(8, 1fr);
+  grid-template-areas:
+    "h h h h  h h h h"
+    "s s c c  c c c c"
+    "f f f f  f f f f";
+
+  min-height: 100vh;
+}
+
+.header {
+  grid-area: h;
+}
+
+.sidebar {
+  grid-area: s;
+}
+
+.content {
+  grid-area: c;
+}
+
+.footer {
+  grid-area: f;
+}
