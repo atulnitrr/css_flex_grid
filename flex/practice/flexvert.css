@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.container {
+  border: 1px solid rebeccapurple;
+
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0 5px 5px 5px;
+}
+
+.container > * {
+  margin: 3px 0;
+  border: 2px solid green;
+}
+
+/* Header container */
+.header-container {
+  margin-top: 0;
+  flex: 1 1 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(50, 55, 84);
+  color: #fff;
+  align-items: center;
+  font-size: 14px;
+}
+
+.header-container > * {
+  border: 1px solid red;
+  flex: 1 1 0;
+}
+
+.left-header {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 300px;
+}
+
+.left-header > * {
+  margin: 0 20px;
+  font-size: 20px;
+}
+.right-header {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-header > * {
+  flex: 1 1 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+/* Header container */
+
+.main-container {
+  flex: 10 1 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-container > * {
+  border: 1px solid gray;
+  padding: 10px;
+  margin: 0 40px;
+}
+
+.content {
+  flex: 3.5 1 0;
+}
+
+.right-sidebar {
+  flex: 1.5 1 0;
+  margin-right: 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  margin: 0 20px;
+}
+
+.top-footer {
+  display: flex;
+  border: 1px solid gray;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.top-footer-elm {
+  flex: 1 1 0;
+  margin: 0 10px 10px 0;
+  padding: 0 10px 10px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.top-footer-elm ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-wrapper {
+  /* text-align: center; */
+}
+
+.top-footer-elm ul li {
+  font-size: 16px;
+  margin: 0 5px 5px 0;
+  padding: 0 5px 5px 0;
+}
+
+.top-footer-elm h2 {
+  font-size: 18px;
+  margin: 0 0 20px;
+  font-weight: 700;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
