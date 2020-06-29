@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>auto flow</title>
+
+    <link rel="stylesheet" href="auto-flow.css" />
+  </head>
+  <body>
+    <div id="grid">
+      <div id="item1"></div>
+      <div id="item2"></div>
+      <div id="item3"></div>
+      <div id="item4"></div>
+      <div id="item5"></div>
+    </div>
+    <select id="direction" onchange="changeGridAutoFlow()">
+      <option value="column">column</option>
+      <option value="row">row</option>
+    </select>
+    <input id="dense" type="checkbox" onchange="changeGridAutoFlow()" />
+    <label for="dense">dense</label>
+  </body>
+</html>
